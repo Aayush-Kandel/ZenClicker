@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Zen Clicker</string>
+    <string name="tagline">Tap anywhere. On repeat.</string>
+
+    <string name="section_speed">Click Speed</string>
+    <string name="cps_format">(%d clicks / sec)</string>
+    <string name="cps_format_decimal">(%.1f clicks / sec)</string>
+
+    <string name="section_permission">Accessibility Status</string>
+    <string name="perm_enabled">Active &amp; Ready ✓</string>
+    <string name="perm_required">Disabled — tap to turn on</string>
+    <string name="perm_restricted_hint">Android 13/14: "Restricted setting" help</string>
+
+    <string name="safety_title">Safety &amp; Controls</string>
+    <string name="safety_tip">🔒 Tap Move to position icons. Tap Lock to pin them.\n💡 Touch the bar or press any Volume button to stop.</string>
+
+    <string name="btn_show_controls">Show Floating Controls</string>
+    <string name="btn_hide_controls">Hide Floating Controls</string>
+
+    <string name="accessibility_service_description">Fast and simple automated screen tap simulation.</string>
+
+    <string name="notification_channel_name">Zen Clicker</string>
+    <string name="notification_title">Zen Clicker</string>
+    <string name="notification_msg_running">Clicking active (%s) — Tap to stop</string>
+    <string name="notification_msg_paused">Ready to click</string>
+    <string name="action_stop">Stop</string>
+    <string name="action_hide">Hide</string>
+
+    <string name="toast_permission_required">Please enable Accessibility permission first</string>
+    <string name="dialog_restricted_title">Android Restricted Setting?</string>
+    <string name="dialog_restricted_msg">On Android 13 and 14, sideloaded apps show "Restricted setting".\n\nTo allow it:\n1. Tap "Open App Info" below.\n2. Tap the 3 dots (⋮) in the top-right corner.\n3. Tap "Allow restricted settings".\n4. Return here and enable Accessibility.</string>
+    <string name="btn_open_app_info">Open App Info</string>
+    <string name="btn_open_accessibility">Accessibility Settings</string>
+    <string name="btn_close">Close</string>
+</resources>

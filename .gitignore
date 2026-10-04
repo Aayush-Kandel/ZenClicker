@@ -1,0 +1,15 @@
+# Build artifacts
+/build/
+*.apk
+*.idsig
+*.keystore
+
+# Bundled SDK and JDK binaries (~679 MB)
+/tools/android-sdk/
+/tools/jdk17/
+
+# Temporary files
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
