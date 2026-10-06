@@ -47,6 +47,19 @@ When you start the service, a small 3-button bar and a target dot appear on your
 
 ---
 
+## Troubleshooting & FAQ
+
+**Why does the app require Accessibility permission?**  
+Android restricts apps from touching other apps for security reasons. The Accessibility API is the only official, non-root mechanism Android provides to dispatch touch events. Zen Clicker does not have the `INTERNET` permission declared in its manifest, so it cannot send any screen content or keystroke data anywhere.
+
+**Why does the service turn off after some time?**  
+Aggressive battery managers on certain phones (Xiaomi/MIUI/HyperOS, Samsung One UI, OnePlus/Oppo) kill background accessibility services when idle. To fix this, open **App Info** for Zen Clicker, set **Battery Usage** to **Unrestricted** (or "No restrictions"), and turn on **Autostart** if your device has it.
+
+**What if clicks are happening so fast I can't tap the pause button?**  
+Press either physical **Volume Up** or **Volume Down** button on your device. Zen Clicker intercepts the key press and cuts the click loop instantly.
+
+---
+
 ## Building from source
 
 You don't need Android Studio or Gradle installed. The project compiles directly using Android command-line tools (`javac`, `d8`, `aapt2`).
