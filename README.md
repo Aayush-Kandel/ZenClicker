@@ -78,6 +78,29 @@ Build takes about 4 seconds and outputs `ZenClicker.apk` in the root folder.
 
 ---
 
+## Contributing
+
+Contributions, bug reports, and suggestions are welcome!
+
+If you would like to help improve Zen Clicker:
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/my-feature`).
+3. Keep additions minimal and dependency-free — a core rule of this project is staying lightweight without external libraries.
+4. Test your build using `build.bat` or `build.sh`.
+5. Open a Pull Request describing your changes.
+
+---
+
+## Roadmap
+
+Planned improvements for future updates:
+- [ ] Multi-point clicking (sequence of multiple targets)
+- [ ] Hold duration adjustment (for games that require long presses)
+- [ ] Click limit timer (stop automatically after N clicks or X minutes)
+- [ ] Android Quick Settings tile for faster toggling
+
+---
+
 ## License
 
 [MIT](LICENSE)
