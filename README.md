@@ -1,114 +1,70 @@
-<div align="center">
+# Zen Clicker
 
-# ⚡ Zen Clicker
+A clean, 37 KB auto clicker for Android with zero ads and zero tracking.
 
-**An ultra-minimalist, high-performance auto clicker for Android.**  
-Zero ads. Zero telemetry. Zero bloated libraries. Just **~37 KB**.
+Most auto clickers on the Play Store are 30+ MB, full of full-screen video ads, demand sketchy permissions, or lag your phone by buffering hundreds of clicks even after you try to pause. 
 
-[![Android](https://img.shields.io/badge/Platform-Android%208.0%2B%20(API%2026--34)-3DDC84?style=flat-square&logo=android&logoColor=white)](https://github.com/Aayush-Kandel/ZenClicker)
-[![Size](https://img.shields.io/badge/APK%20Size-~37%20KB-4F9DFF?style=flat-square)](https://github.com/Aayush-Kandel/ZenClicker/raw/main/ZenClicker.apk)
-[![Root](https://img.shields.io/badge/Root-Not%20Required-brightgreen?style=flat-square)](https://github.com/Aayush-Kandel/ZenClicker)
-[![Privacy](https://img.shields.io/badge/Privacy-100%25%20Offline%20%2F%20No%20Ads-success?style=flat-square)](https://github.com/Aayush-Kandel/ZenClicker)
-[![License](https://img.shields.io/badge/License-MIT-lightgrey?style=flat-square)](LICENSE)
+I built Zen Clicker to be lightweight, simple, and completely offline. It does one job and gets out of your way.
 
-<br />
-
-<a href="https://github.com/Aayush-Kandel/ZenClicker/raw/main/ZenClicker.apk">
-  <img src="https://img.shields.io/badge/⬇️%20DOWNLOAD%20APK-ZenClicker.apk%20(37%20KB)-4F9DFF?style=for-the-badge&logo=android&logoColor=white" height="42" alt="Download APK" />
-</a>
-
-<p><em>Click the button above to download the ready-to-install signed APK directly.</em></p>
-
-</div>
+[**Download ZenClicker.apk**](https://github.com/Aayush-Kandel/ZenClicker/raw/main/ZenClicker.apk) (Direct APK download, ~37 KB)
 
 ---
 
-## 🎛️ Floating Controller Dock
+## What makes it different
 
-Zen Clicker features a compact, sleek 3-button floating dock and a precision reticle:
-
-```
- ┌──────────────┬──────────────┬──────────────┐
- │    ▶ / ⏸     │    🔒 / ✥    │      ✕       │
- │  Play / Stop │   Move / Pin │    Close     │
- └──────────────┴──────────────┴──────────────┘
-```
-
-| Control | Mode | Behavior |
-| :---: | :--- | :--- |
-| **▶ / ⏸** | **Play / Pause** | Tap to begin clicking. Tap again to stop instantly (**0 ms touch-down stop**). |
-| **🔒 / ✥** | **Move / Pin Toggle** | **PINNED (🔒 Default):** Both the pin and controller are completely locked in place. Accidental swipes or gameplay touches will never nudge them.<br>**MOVE (✥):** Unlocks the target pin and controller so you can drag and reposition them anywhere on screen. Tap again to re-lock. |
-| **✕** | **Close** | One-tap dismiss to close the floating overlay immediately. |
+- **No ads or trackers:** Doesn't even request internet access. 100% offline.
+- **Tiny footprint:** Built with pure Android APIs (no heavy libraries or frameworks). The entire app is under 40 KB.
+- **Pinned mode:** One of the most annoying things about mobile auto clickers is accidentally moving the target while playing. By default, the controls and target reticle are locked in place. You have to tap the Move button to reposition them.
+- **Instant pause:** Clicks don't backlog in a queue. When you hit pause, it stops immediately.
+- **Physical emergency stop:** If you have clicks running so fast that your screen isn't registering your taps, just press either volume button to kill the clicking immediately. It also stops automatically whenever your screen turns off.
+- **Speed options:** Quick presets from 50ms (20 clicks/second) to 1 second, plus a custom slider.
 
 ---
 
-## ✨ Key Highlights
+## The Controls
 
-- 🎯 **Pixel-Perfect Target Reticle:** High-contrast blue reticle with center crosshairs and a white pinpoint dot for precision aiming on dark games or bright screens.
-- 🔒 **Rock-Solid Pinned Mode:** Prevents accidental dragging while gaming. Once positioned and locked, icons will never shift.
-- ⚡ **Backlog-Free Gesture Dispatcher:** Clicks fire sequentially with system completion callbacks. Eliminates gesture queue congestion and runaway clicking at high CPS (up to 25 clicks/sec).
-- 🛑 **Physical Volume Key Emergency Stop:** Press any physical Volume button on your phone to instantly cut clicking if your screen is busy.
-- 🌙 **Screen-Off Safety Guard:** Automatically ceases all clicking the moment your device screen turns off.
-- 🎚️ **Fine-Tuned Speed Controls:** Instant preset chips (**50ms [20 CPS]**, **100ms [10 CPS]**, **200ms [5 CPS]**, **500ms [2 CPS]**, **1.0s [1 CPS]**) plus a smooth slider from 40ms to 2.0s.
-- 📳 **Tactile Haptic Feedback:** Gentle vibration ticks on start, stop, move toggle, and dismissal.
-- 🛡️ **Android 13 & 14 Ready:** Built-in guidance for sideloaded "Restricted Settings" permissions.
+When you start the service, a small 3-button bar and a target dot appear on your screen:
+
+- **Play / Pause (▶ / ⏸):** Starts or stops clicking at the target dot.
+- **Lock / Move (🔒 / ✥):** Toggles between pinned and draggable mode. Keep it on 🔒 while clicking so you don't nudge the target by mistake. Switch to ✥ when you want to drag the bar or dot somewhere else.
+- **Close (✕):** Hides the floating controls.
 
 ---
 
-## 📱 Quick Setup Guide
+## How to install and use
 
-1. **Download & Install:** Download [`ZenClicker.apk`](https://github.com/Aayush-Kandel/ZenClicker/raw/main/ZenClicker.apk) and install it on your device.
-2. **Grant Accessibility Permission:** Tap the card inside the app.
-   > **Android 13 / 14 Note:** If Android shows *"Restricted setting"*, tap the in-app help link $\rightarrow$ **Open App Info** $\rightarrow$ tap the three dots (**⋮**) in the top-right corner $\rightarrow$ tap **"Allow restricted settings"**, then enable Accessibility.
-3. **Select Speed:** Choose a preset chip or adjust the slider.
-4. **Show Controls:** Tap **"Show Floating Controls"**.
-5. **Aim & Lock:**
-   - Tap the **Move button (✥)**.
-   - Drag the target pin onto your game button.
-   - Tap the **Lock button (🔒)** to pin everything in place.
-6. **Click:** Tap **Play (▶)** to start tapping! Tap again or press any **Volume button** to stop.
+1. Download the latest [`ZenClicker.apk`](https://github.com/Aayush-Kandel/ZenClicker/raw/main/ZenClicker.apk) and install it on your device.
+2. Open the app and enable Accessibility Service (this is how Android allows simulated taps).
+   - **Note for Android 13 and 14:** Android often blocks sideloaded apps from enabling accessibility by default ("Restricted setting"). To fix this:
+     1. Open your phone's **Settings -> Apps -> Zen Clicker**.
+     2. Tap the **three dots (⋮)** in the top right corner.
+     3. Tap **Allow restricted settings**.
+     4. Go back to the app and turn on Accessibility.
+3. Pick your desired click speed.
+4. Tap **Show Floating Controls**.
+5. Tap the **Move button (✥)**, drag the target dot over the button you want to click, then tap the **Lock button (🔒)**.
+6. Tap **Play (▶)**. To stop, tap Pause or press any volume button.
 
 ---
 
-## 🛠️ Build from Source
+## Building from source
 
-Everything is designed for zero external bloat — no Gradle, Android Studio, or external dependencies required.
+You don't need Android Studio or Gradle installed. The project compiles directly using Android command-line tools (`javac`, `d8`, `aapt2`).
 
-### Windows (Command Prompt or PowerShell)
+**On Windows:**
 ```cmd
 build.bat
 ```
 
-### Linux / macOS / Git Bash
+**On Linux / macOS:**
 ```bash
 bash build.sh
 ```
 
-**Output:** `ZenClicker.apk` (Signed, zip-aligned, and ready to install in ~4 seconds).
+Build takes about 4 seconds and outputs `ZenClicker.apk` in the root folder.
 
 ---
 
-## 📂 Project Architecture
+## License
 
-```
-├── ZenClicker.apk                # Production signed release binary (~37 KB)
-├── app/src/main/
-│   ├── AndroidManifest.xml       # Minimal permissions and exported service
-│   ├── java/.../
-│   │   ├── MainActivity.java     # Speed presets, CPS indicator, permission helper
-│   │   └── AutoClickerService.java # Floating dock, pinned reticle, gesture engine
-│   └── res/
-│       ├── layout/activity_main.xml
-│       ├── values/{colors,styles,strings}.xml
-│       ├── drawable/{bg_card,bg_button,bg_chip,ic_app}.xml
-│       └── xml/accessibility_service_config.xml
-├── build.bat                     # Pure Windows native build script
-├── build.sh                      # Unix/Bash build script
-└── README.md
-```
-
----
-
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
+[MIT](LICENSE)
